@@ -4,6 +4,28 @@ public class CricketCoach implements Coach {
 
 	private FortuneService fortuneService;
 	
+	private String email;
+
+	private String team;
+	
+	public void setEmail(String email) {
+		System.out.println("cricket coach: inside setEmail");
+		this.email = email;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+
+	public void setTeam(String team) {
+		System.out.println("cricket coach: inside setTeam");
+		this.team = team;
+	}
+	
+	public String getTeam() {
+		return team;
+	}
+	
 	public CricketCoach(){
 		System.out.println("cricket coach: inside no arg constructor");
 	}

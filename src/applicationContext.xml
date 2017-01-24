@@ -24,6 +24,10 @@
     <!--Set up setter injection -->
     <property name="fortuneService" ref="myFortuneService" />
     <!--Spring will call setFortuneService -->
+    
+    <!-- Inject literal values -->
+    <property name="email" value="email@adress.com" />
+    <property name="team" value="Team Rocket" />
     </bean>
 
 
