@@ -9,18 +9,22 @@
     
       <!-- Define your beans here -->
     
-    <!-- <bean id="secondCoach"
-    class="com.yosicode.springdemo.FootballCoach">
-    </bean> -->
-    
-    <bean id="myFortune"
+    <bean id="myFortuneService"
     class="com.yosicode.springdemo.HappyFortuneService">
     </bean> 
     
     <bean id="myCoach"
     class="com.yosicode.springdemo.TrackCoach">
-    <constructor-arg ref="myFortune" />
-    </bean>   
+    <constructor-arg ref="myFortuneService" />
+    </bean> 
+    
+    <bean id="myCricketCoach"
+    class="com.yosicode.springdemo.CricketCoach">
+    
+    <!--Set up setter injection -->
+    <property name="fortuneService" ref="myFortuneService" />
+    <!--Spring will call setFortuneService -->
+    </bean>
 
 
 </beans>
