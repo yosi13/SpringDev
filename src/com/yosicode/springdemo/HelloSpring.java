@@ -15,12 +15,13 @@ public class HelloSpring {
 		//calls methods on the bean
 		System.out.println(theCoach.getDailyWorkout());
 		
-//		Coach secondCoach = context.getBean("secondCoach", Coach.class);
-//		
-//		System.out.println(secondCoach.getDailyWorkout());
-//		
 		//new methods for fortune
 		System.out.println(theCoach.getDailyFortune());
+		
+		Coach secondCoach = context.getBean("secondCoach", Coach.class);
+		
+		System.out.println(secondCoach.getDailyWorkout());
+		System.out.println(secondCoach.getDailyFortune());
 		
 		//close the context
 		context.close();

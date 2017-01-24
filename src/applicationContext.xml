@@ -19,7 +19,12 @@
     <bean id="myCoach"
     class="com.yosicode.springdemo.TrackCoach">
     <constructor-arg ref="myFortuneService" />
-    </bean> 
+    </bean>
+    
+    <bean id="secondCoach"
+    class="com.yosicode.springdemo.FootballCoach">
+    <constructor-arg ref="myFortuneService" />
+    </bean>  
     
     <bean id="myCricketCoach"
     class="com.yosicode.springdemo.CricketCoach">

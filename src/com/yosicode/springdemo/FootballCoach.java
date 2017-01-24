@@ -15,7 +15,7 @@ public class FootballCoach implements Coach{
 	@Override
 	public String getDailyFortune() {
 		// TODO Auto-generated method stub
-		return "Just do it"+fortuneService.getFortune();
+		return "Just do it! said FootballCoach. "+fortuneService.getFortune();
 	}
 
 }
